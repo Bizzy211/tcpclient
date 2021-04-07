@@ -3,13 +3,12 @@ import socket
 ClientSocket = socket.socket()
 
 # Get the assigned container IP Address
-hostName = socket.gethostname()
-ipAddress = socket.gethostbyname(hostName)
-print('Container IP: ' + ipAddress)
+#hostName = socket.gethostname()
+#ipAddress = socket.gethostbyname(hostName)
+#print('Container IP: ' + ipAddress)
 
-host = input(
-    "What is the Server IP Address or Hostname? (default: '172.100.0.2') ") or "172.100.0.2"
-port = int(input("What is the Server Port? (default: 1223) ") or "1223")
+host = input('What is the Server IP Address or Hostname?')
+port = int(input('What is the Server Port?')
 
 print('Waiting for connection')
 
